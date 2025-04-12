@@ -1,14 +1,12 @@
-
-const express = require('express');
-const cors = require('cors');
 const { createServer } = require('http');
 const { Server } = require('socket.io');
 const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
-const { makeWASocket, useMultiFileAuthState, DisconnectReason, downloadMediaMessage } = require('@adiwajshing/baileys');
+const { default: makeWASocket, useMultiFileAuthState, DisconnectReason, downloadMediaMessage } = require('@whiskeysockets/baileys');
 const { Boom } = require('@hapi/boom');
 const pino = require('pino');
+
 
 // Create Express app
 const app = express();
